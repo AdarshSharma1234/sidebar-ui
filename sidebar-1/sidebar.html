@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar-1-UI design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sidebar.css" />
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button class="sidebar-burger" type="button"
+                 onclick="toggleSidebar()"></button>
+
+                <img src="./assets/blocklord-logo.png" alt="" class="sidebar-logo">
+            </header>
+            <nav class="sidebar-nav">
+                <button type="button">
+                    <img src="./assets/icon-home.svg" alt="">
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <img src="./assets/icon-settings.svg" alt="">
+                    <span style="animation-delay: 0.3s" >Setting</span>
+                </button>
+                <button type="button">
+                    <img src="./assets/icon-levels.svg" alt="">
+                    <span style="animation-delay: 0.3s">Levels</span>
+                </button>
+                <button type="button">
+                    <img src="./assets/icon-accounts.svg" alt="">
+                    <span style="animation-delay: 0.3s">Accounts</span>
+                </button>
+               
+            </nav>
+
+            <footer class="sidebar-footer">
+                <button type="button">
+                    <img src="./assets/icon-lock.svg" alt="">
+                    <span>Logout</span>
+                </button>
+            </footer>
+        </div>
+    </aside>
+    <script type="text/javascript">
+        const toggleSidebar=() => document.body.classList.toggle("open")
+    </script>
+</body>
+</html>
